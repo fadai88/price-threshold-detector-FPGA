@@ -7,7 +7,7 @@ module priceThresholdDetect #
                              output logic [1:0] out);
 
 initial begin
-    assert(UPPER_BAND >= LOWER_BAND);
+    assert(UPPER_BAND >= LOWER_BAND)
 	else 
 		$error("UPPER_BAND must be >= LOWER_BAND");
 end
